@@ -53,6 +53,6 @@ No external dataset will be used, therefore only the Quotebank dataset wil be us
 
 ## Organization within the team
 
-tbd
+to be determined
 
 ## Questions for TAs
