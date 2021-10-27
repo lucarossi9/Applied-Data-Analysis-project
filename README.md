@@ -4,9 +4,9 @@
 
 ## Abstract
 
- From an intuitive standpoint it’s often considered that common beliefs and values can lead to similar perspectives, therefore we tend to hypothesize that given a shared background people would often write and think in a related way.
+ From an intuitive standpoint it’s often considered that common beliefs and values can lead to similar opinions perspectives, therefore we tend to hypothesize that given a shared background and beliefs people would often write and think in a related way.
  
-In statistics one can speak about this similarity as correlation, if for two similar authors we know that there is a correlation between the positions they have regarding a certain topic then by looking at quotes from the first author we can make an educated guess about the positions of the second author, given the statistical significance of said correlation.  
+In statistics one can speak about this similarity as correlation, if for two similar authors we know that there is a correlation between the positions they have regarding a certain topic, then by looking at quotes from the first author we can make an educated guess about the positions of the second author, given the statistical significance of said correlation.  
 
 An interesting question one can make is if it's possible to predict the position of a certain author related to a certain topic even without quotes from him about this specific topic. The goal of our project is to solve this problem, namely by using **clustering** and **sentimental analysis** we try to predict an author's position even without meaningful quotes on the topic.
 
