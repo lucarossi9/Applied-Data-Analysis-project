@@ -4,41 +4,34 @@
 
 ## Abstract
 
- From an intuitive standpoint it’s often considered that common beliefs and values can lead to similar opinions perspectives, therefore we tend to hypothesize that given a shared background and beliefs people would often write and think in a related way.
- 
-In statistics one can speak about this similarity as correlation, if for two similar authors we know that there is a correlation between the positions they have regarding a certain topic, then by looking at quotes from the first author we can make an educated guess about the positions of the second author, given the statistical significance of said correlation.  
+In the 21st century public opinion is crucial for political figures to understand how their base feels about them, thus studying the media approval rating can be of utmost importance. 
 
-An interesting question one can make is if it's possible to predict the position of a certain author related to a certain topic even without quotes from him about this specific topic. The goal of our project is to solve this problem, namely by using **clustering** and **sentimental analysis** we try to predict an author's position even without meaningful quotes on the topic.
+Media approval rating can take many forms, traditionally one would think in a classification scheme where we could label people support of a certain public figure as pro, against or neutral, however a different representation could be labelling using a continuous value. Indeed by using a continuous value we can see with more clarity if people's opinion are more polarized or not, for example for elections it's very important to be able to distinguish between let's say a bimodal distribution and a bell curve shaped distribution, since in the first case the probability of getting undecided voters to vote for you it's smaller than in the other case.
+
+Our focus will be on showing the evolution of the polarization of popularity for different political figures, as well as a careful analysis of what this meant in term of political events. 
 
 ## Research Questions
 
-Some research questions that we would like to address in this project:
-* Are there topics where authors usually have the same set of positions, for example is a pro euthanasia author more likely to be pro abortion?
-* Can we predict a person's political party from their position on a set of topics?
 
 ## Proposed Dataset
 
-No external dataset will be used, therefore only the Quotebank dataset wil be used.
+The Quotebank dataset wil be used jointly with Special attributes dataset.
 
 ## Methods
 
-* Filter quotes by topic:
-  - For each topic define a set of words intimately related to the topic
-  - Filter the dataset in search of quotes that mention at least one of the words related to the topic
+* Filter quotes by person:
+  - For each person define a set of aliases
+  - Filter the dataset in search of quotes that mention at least one of the aliases
  
-* Access the position of the authors to a certain topic:
+* Map the people's opinion on this person:
   - Develop Sentiment Analysis techniques using LSTMs (in our case we will be using TextBlob), then use the aforementioned techniques to attribute a value (between -1 and 1) to each quote.
-  - Average each author's quotes sentiment value, then use the mean to compute whether the author is a pro or against the topic.
-
-* Predict author's position based on clustering techniques:
-  - Using a variant of K-nearest neighbors predict the author's position
-  - Compute the accuracy of the prediction defined above
-
-* Statistical Analysis:
-  - Compute the correlation between the positions on each set of topics
-  - Compute the null hypotheses and see the statistical significance of deviations. 
-  - ...
   
+* Analysis of media approval rating:
+ - Compute the distribution and polarization metrics for each (person, timestamp)
+ - Relate it to important event in the political career of said person
+ - Compute a statistical test to see if two samples came from the same distributions (before and after a important political event)
+ 
+
 ## Proposed timeline
 
 * 25th October - 31st October:
