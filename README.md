@@ -27,9 +27,9 @@ The Quotebank dataset wil be used jointly with Special attributes dataset.
   - Develop Sentiment Analysis techniques using LSTMs (in our case we will be using TextBlob), then use the aforementioned techniques to attribute a value (between -1 and 1) to each quote.
   
 * Analysis of media approval rating:
- - Compute the distribution and polarization metrics for each (person, timestamp)
- - Relate it to important event in the political career of said person
- - Compute a statistical test to see if two samples came from the same distributions (before and after a important political event)
+  - Compute the distribution and polarization metrics for each (person, timestamp)
+  - Relate it to important event in the political career of said person
+  - Compute a statistical test to see if two samples came from the same distributions (before and after a important political event)
  
 
 ## Proposed timeline
