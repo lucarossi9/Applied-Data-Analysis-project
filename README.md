@@ -1,44 +1,33 @@
 # ADA-2021-project-fix-it
 
-## Title : Finding an author's position based on clustering techniques
+## Title : Discovering popularity of famous american politicians 
 
 ## Abstract
 
- From an intuitive standpoint it’s often considered that common beliefs and values can lead to similar opinions perspectives, therefore we tend to hypothesize that given a shared background and beliefs people would often write and think in a related way.
- 
-In statistics one can speak about this similarity as correlation, if for two similar authors we know that there is a correlation between the positions they have regarding a certain topic, then by looking at quotes from the first author we can make an educated guess about the positions of the second author, given the statistical significance of said correlation.  
-
-An interesting question one can make is if it's possible to predict the position of a certain author related to a certain topic even without quotes from him about this specific topic. The goal of our project is to solve this problem, namely by using **clustering** and **sentimental analysis** we try to predict an author's position even without meaningful quotes on the topic.
+In the 21st century media coverage is a crucial factor for political figures. Studying the number of times a certain politician is quoted in a media (in our case New York Times), we can have a rough measure of how much interest does the media address to this politician.
+In our analysis we will study the evolution of the number of citations of some of the most important american politicians over the last few years and we will compare their evolution to the most important events in their carreer in order to see if there is any causation or correlation. We will then add some more analysis distinguishing the speakers (who quoted a certain politician) by religion, nationality and political party in order to have a better and fragmented view of the causal effects. We will compare our work with Google Trends in order to see if the results actually match.
 
 ## Research Questions
 
-Some research questions that we would like to address in this project:
-* Are there topics where authors usually have the same set of positions, for example is a pro euthanasia author more likely to be pro abortion?
-* Can we predict a person's political party from their position on a set of topics?
 
 ## Proposed Dataset
 
-No external dataset will be used, therefore only the Quotebank dataset wil be used.
+The Quotebank dataset will be used jointly with Special attributes dataset.
 
 ## Methods
 
-* Filter quotes by topic:
-  - For each topic define a set of words intimately related to the topic
-  - Filter the dataset in search of quotes that mention at least one of the words related to the topic
+* Filter quotes by person:
+  - For each politician we look for his surname in each quote in the dataset.
+  - We filter again the result removing all the quotes whose author is the politician himself.
  
-* Access the position of the authors to a certain topic:
-  - Develop Sentiment Analysis techniques using LSTMs (in our case we will be using TextBlob), then use the aforementioned techniques to attribute a value (between -1 and 1) to each quote.
-  - Average each author's quotes sentiment value, then use the mean to compute whether the author is a pro or against the topic.
+* Analysis of the result
+  - We plot the time series of the occurances for different politicians and for different periods of time trying to analyse which are the events in the life of a politician which cause the politician to be quoted more over a certain period.
+  - We will then tell the story of the american political scene from a mediatic point of view, comparing the evolution of the distribution of the main american politicians over the years 2015-2020.
+  - We will compare our results to Google Trends in order to see if there is any match between the number of quotes linked to a certain politician and how much is he/she searched on google. We expect the two distribution to be similar but not the same since some scandal/events can have different a impact on different types of media (the user base of Google is quite different from the reader base of New York Times). 
+  - We will merge the QuoteBank dataset with the special attribute dataset in order to understand important information on the people who quoted a given politician. For example we could analyse how the timeseries distribution of occurence of a given politician in a quote is different in different age groups, religion groups and political parties.
 
-* Predict author's position based on clustering techniques:
-  - Using a variant of K-nearest neighbors predict the author's position
-  - Compute the accuracy of the prediction defined above
+* 
 
-* Statistical Analysis:
-  - Compute the correlation between the positions on each set of topics
-  - Compute the null hypotheses and see the statistical significance of deviations. 
-  - ...
-  
 ## Proposed timeline
 
 * 25th October - 31st October:
