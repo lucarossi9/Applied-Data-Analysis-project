@@ -22,14 +22,11 @@ The Quotebank dataset will be used jointly with Special attributes dataset.
  
 * Analysis of the result
   - We plot the time series of the occurances for different politicians and for different periods of time trying to analyse which are the events in the life of a politician which cause the politician to be quoted more over a certain period.
-  - We will then tell the story of the american political scene from a mediatic point of view, comparing the evolution of the distribution of the main politician over the years 2015-2020.
-  - We will compare our results to Google Trends in order to see if there is any match between the number of quotes linked to a certain politician and how much is he/she searched on internet. We expect the two distribution to be similar but not the same since some controvertial events 
-  
-* Analysis of media approval rating:
-  - Compute the distribution and polarization metrics for each (person, timestamp)
-  - Relate it to important event in the political career of said person
-  - Compute a statistical test to see if two samples came from the same distributions (before and after a important political event)
- 
+  - We will then tell the story of the american political scene from a mediatic point of view, comparing the evolution of the distribution of the main american politicians over the years 2015-2020.
+  - We will compare our results to Google Trends in order to see if there is any match between the number of quotes linked to a certain politician and how much is he/she searched on google. We expect the two distribution to be similar but not the same since some scandal/events can have different a impact on different types of media (the user base of Google is quite different from the reader base of New York Times). 
+  - We will merge the QuoteBank dataset with the special attribute dataset in order to understand important information on the people who quoted a given politician. For example we could analyse how the timeseries distribution of occurence of a given politician in a quote is different in different age groups, religion groups and political parties.
+
+* 
 
 ## Proposed timeline
 
