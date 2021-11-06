@@ -9,6 +9,9 @@ In our analysis we will study the evolution of the number of citations of some o
 
 ## Research Questions
 
+- Is there any correlation between the number of quotes from conventional media that mention a certain person and the number of online views?
+
+- Are their characteristics such as age, political party or religion indicative of the number of quotes this person has on a certain political figure?
 
 
 ## Proposed Dataset
@@ -30,7 +33,7 @@ The Quotebank dataset will be used jointly with Special attributes dataset, addi
 * Sensitivity analysis
   - Standardize features such as age, categorize other features such as political party, religion, ethnic group. Label each author to have either mentioned a certain political figure or not.
   - Use the aforementioned features to compute a logistic regression model to predict if the author mentioned a certain political figure or not, essentially computing the propensity scores.
-  - Match pairs of persons with the same propensity score in order to create meaningful treated and control groups.
+  - Match pairs of persons with the same propensity score in order to create meaningful treated and control groups, split this pairs based on the value of a certain feature, for example age above or below 40.
   - Explicitely compare the distributions of both treated and control groups, in the end compute odds ratio.
 
 ## Proposed timeline
