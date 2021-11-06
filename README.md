@@ -1,14 +1,11 @@
 # ADA-2021-project-fix-it
 
-## Title : Finding an author's position based on clustering techniques
+## Title : Discovering popularity of famous american politicians 
 
 ## Abstract
 
-In the 21st century public opinion is crucial for political figures to understand how their base feels about them, thus studying the media approval rating can be of utmost importance. 
-
-Media approval rating can take many forms, traditionally one would think in a classification scheme where we could label people support of a certain public figure as pro, against or neutral, however a different representation could be labelling using a continuous value. Indeed by using a continuous value we can see with more clarity if people's opinion are more polarized or not, for example for elections it's very important to be able to distinguish between let's say a bimodal distribution and a bell curve shaped distribution, since in the first case the probability of getting undecided voters to vote for you it's smaller than in the other case.
-
-Our focus will be on showing the evolution of the polarization of popularity for different political figures, as well as a careful analysis of what this meant in term of political events. 
+In the 21st century media coverage is a crucial factor for political figures. Studying the number of times a certain politician is quoted in a media, we can have a rough measure of how much interest does the media adress to this politician.
+In our analysis we will study the evolution of the number of citations of some of the most important american politicians over the last few years and we will compare their evolution to some of the most important events in their carreer. We will then associate each speaker who quoted the politician to his nationality in order to show which countries are interested the most by the above mentioned political figure.
 
 ## Research Questions
 
@@ -20,11 +17,11 @@ The Quotebank dataset wil be used jointly with Special attributes dataset.
 ## Methods
 
 * Filter quotes by person:
-  - For each person define a set of aliases
-  - Filter the dataset in search of quotes that mention at least one of the aliases
+  - For each politician we look for his surname in each quote in the dataset.
+  - We filter again the result removing all the quotes whose author is the politician himself and removing also all the quotes which can be attributed to someone with the same surname but not to the politician directly (for example Melania Trump)
  
-* Map the people's opinion on this person:
-  - Develop Sentiment Analysis techniques using LSTMs (in our case we will be using TextBlob), then use the aforementioned techniques to attribute a value (between -1 and 1) to each quote.
+* Analysis of the result
+  - We plot the time series of the occurances for different politicians and for different period of times trying to analyse which 
   
 * Analysis of media approval rating:
   - Compute the distribution and polarization metrics for each (person, timestamp)
