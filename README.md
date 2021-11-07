@@ -1,6 +1,6 @@
 # ADA-2021-project-fix-it
 
-## Title : Discovering popularity of famous american politicians 
+## Title : An analysis of the american political scene from a mediatic point of view 
 
 ## Abstract
 
