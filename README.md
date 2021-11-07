@@ -31,10 +31,11 @@ The Quotebank dataset will be used jointly with Special attributes dataset, addi
   - Merge the QuoteBank dataset with the special attribute dataset in order to understand important information on the people who quoted a given politician. We intend to analyse how the timeseries distribution of occurences of a given politician in a quote changes within different age groups, religion groups and political parties.
 
 * Sensitivity analysis
+  - Our initial hypothesis could be that people aged more than 40 tend to speak more about a certain politician with respect to people aged less than 40. We will validate or discredit this belief using sensitivity analysis.
   - Standardize features such as age, categorize other features such as political party, religion, ethnic group. Label each author to have either mentioned a certain political figure or not.
-  - Use the aforementioned features to compute a logistic regression model to predict if the author mentioned a certain political figure or not, essentially computing the propensity scores.
-  - Match pairs of persons with the same propensity score in order to create meaningful treated and control groups, split this pairs based on the value of a certain feature, for example age above or below 40.
-  - Explicitely compare the distributions of both treated and control groups, in the end compute odds ratio.
+  - Use the aforementioned features to compute a logistic regression model to predict if the author mentioned a certain political figure or not, essentially computing the propensity scores with our observed covariates such as gender, age, nationality,religion, ...
+  - Match pairs of persons with the same propensity score in order to create meaningful treated and control groups (with the same dimension of samples) , split this pairs based on the value of the age (above or below 40).
+  - Explicitely compare the distributions of both treated and control groups, in the end compute odds ratio to validate or discredit our initial hypothesis.
 
 ## Proposed timeline
 
