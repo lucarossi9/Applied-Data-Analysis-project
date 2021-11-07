@@ -11,9 +11,13 @@ In our analysis we will study the evolution of the number of citations of some o
 
 - Is there any correlation between the number of quotes from conventional media that mention a certain person and the number of online views?
 
+- Who are the people who quote more a given politician ?
+
 - Are their characteristics such as age, political party or religion indicative of the number of quotes this person has on a certain political figure?
 
+- Which events in the life of a politician can be associated to an increase of the number of quotes referred to him ? 
 
+- 
 ## Proposed Dataset
 
 The Quotebank dataset will be used jointly with Special attributes dataset, additionally Google trends data will be used for producing meaningful comparisons.
