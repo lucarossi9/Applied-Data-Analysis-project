@@ -26,8 +26,8 @@ The Quotebank dataset will be used jointly with Special attributes dataset, addi
 
 * Filter quotes by person:
   - For each politician we look for his surname in each quote in the dataset.
-  - Refilter again the result removing all the quotes whose author is the politician himself.
- 
+  - For each politician we look at quotes made by him, and the number of requotes.
+  
 * Analysis of the result
   - Provide the time series of the occurrences for different politicians over different periods of time trying to analyse which are the events in the life of a politician which cause the politician to be quoted more.
   - Tell the story of the american political scene from a mediatic point of view, comparing the evolution of the distribution of the main american politicians over the years 2015-2020.
