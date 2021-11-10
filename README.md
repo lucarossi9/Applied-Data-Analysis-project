@@ -50,21 +50,21 @@ The Quotebank (quotes centric version) dataset will be used jointly with Special
 
 ##### 5. Correlation and hypothesis testing analysis
  - We will try to understand the features of the speakers (present in the speaker attribute file) which are the most correlated with a huge number of quotes on a given politician. 
+ - We will do chi squared hypothesis test in order to understand if a given features is independent on the number of quotes on a certain politician.
 
 ## Proposed timeline
 
 * 25th October - 31st October:
-  -
+  - Decide the idea of the project
 
 * 1st November - 7th November:
-  -
+  - Check the feasibility (checking if sentimental analysis is working)--> Some ideas were discarded
 
 * 8th November - 12th November:
-  -
-
+ - Preparing the data as described and show the feasibility of the idea
 
 ## Organization within the team
 
-to be determined
+
 
 ## Questions for TAs
