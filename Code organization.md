@@ -1,3 +1,5 @@
+```console
+.
 ├── Code
 │   ├── Project2.ipynb
 │   ├── speaker_attributes-analysis.ipynb
@@ -6,9 +8,11 @@
 │   ├── Map Dates
 │   ├── filter_quotes
 |   └── transform_special_attributes
-    
-    
-    .
+```
+
+
+```console
+.
 ├── Code
 │   ├── implementations.py
 │   ├── proj1_helpers.py
@@ -29,3 +33,4 @@
 │   └── README.md
 ├── README.md
 └── Report.pdf
+```
