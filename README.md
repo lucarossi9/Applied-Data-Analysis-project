@@ -41,19 +41,15 @@ The Quotebank (quotes centric version) dataset will be used jointly with Special
 ##### 3. Extract the dates from the Quotebank file
 * For each filtered quote, we extract from the quotebank (article centric dataset) the dates of all the articles containing that quote and we add them to the filtered dataframe created in point 1).
 
-
 ##### 4. Analysis of the result
-  - Provide the time series of the occurrences for different politicians over different periods of time trying to analyse which are the events in the life of a politician which cause the politician to appear more on quotes.
-  - Tell the story of the american political scene from a mediatic point of view, comparing the evolution of the distribution of the main american politicians over the years 2015-2020.
-  - Compare our results with Google Trends data in order to see if there is any match between the number of quotes linked to a certain politician and how much is he/she searched on google. We expect the two distribution to be similar but not the same since some scandal/events can have a different impact on different types of media (the user base of Google is quite different from the reader base of New York Times and the content shared online is inherently different from the conventional news). 
-  - Merge the QuoteBank dataset with the special attribute dataset in order to understand important information on the people who quoted a given politician. We intend to analyse how the timeseries distribution of occurences of a given politician in a quote changes within different age groups, religion groups and political parties.
+  - Provide the time series (number of quotes related to a given politicians vs time) for different politicians and for different periods of time.
+  - We will analyse which are the events in the life of a politician which cause the politician to appear more on quotes.
+  - Tell the story of the American political scene from a mediatic point of view, comparing the evolution of the time series for the main American politicians over the years 2015-2020.
+  - Compare our results with Google Trends data in order to see if there is any match between the number of quotes linked to a certain politician and how much is he/she searched on google over different periods. We expect the two distribution to be similar but not the same since some scandal/events can have a different impact on different types of media (the user base of Google is quite different from the reader base of New York Times and the content shared online is inherently different from the conventional news). 
+  - Merge the previously created dataframe with the speaker attribute dataframe in order to understand important information on the people who quoted a given politician. We intend to analyse how the time series distribution of occurrences of a given politician changes within different age groups, religion groups and political parties. From this analysis we can understand which events are the one which increase the most the number of quotes on a given politician for each group of people.
 
-5. Sensitivity analysis
-  - Our initial hypothesis could be that people aged more than 40 tend to speak more about a certain politician with respect to people aged less than 40. We will validate or discredit this belief using sensitivity analysis.
-  - Standardize features such as age, categorize other features such as political party, religion, ethnic group. Label each author to have either mentioned a certain political figure or not.
-  - Use the aforementioned features to compute a logistic regression model to predict if the author mentioned a certain political figure or not, essentially computing the propensity scores with our observed covariates such as gender, age, nationality,religion, ...
-  - Match pairs of persons with the same propensity score in order to create meaningful treated and control groups (with the same dimension of samples) , split this pairs based on the value of the age (above or below 40).
-  - Explicitely compare the distributions of both treated and control groups, in the end compute odds ratio to validate or discredit our initial hypothesis.
+##### 5. Correlation analysis
+ - We will try to understand the effect of 
 
 ## Proposed timeline
 
