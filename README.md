@@ -33,7 +33,7 @@ The Quotebank (quotes centric version) dataset will be used jointly with Special
 
 * Filter quotes by person:
   - For each politician we look for his surname in each quote in the dataset and we create a dataframe containing just these rows.
-  - For each politician we remove from the previously created dataframe the rows in which it is the politician himself speaking and the rows in which the name of people with the same surname of the politician appear. In this way we can remove from the previously created dataframe all the quotes pronounced by the politician himself and the rows not speaking about the politician but other people with the same surname.
+  - For each politician we remove from the previously created dataframe the rows in which it is the politician himself speaking and the rows in which the name of people with the same surname of the politician appear. In this way we can remove from the previously created dataframe all the quotes pronounced by the politician himself and the rows not speaking about the politician but speaking about other people with the same surname.
   
 * Analysis of the result
   - Provide the time series of the occurrences for different politicians over different periods of time trying to analyse which are the events in the life of a politician which cause the politician to be quoted more.
