@@ -48,8 +48,8 @@ The Quotebank (quotes centric version) dataset will be used jointly with Special
   - Compare our results with Google Trends data in order to see if there is any match between the number of quotes linked to a certain politician and how much is he/she searched on google over different periods. We expect the two distribution to be similar but not the same since some scandal/events can have a different impact on different types of media (the user base of Google is quite different from the reader base of New York Times and the content shared online is inherently different from the conventional news). 
   - Merge the previously created dataframe with the speaker attribute dataframe in order to understand important information on the people who quoted a given politician. We intend to analyse how the time series distribution of occurrences of a given politician changes within different age groups, religion groups and political parties. From this analysis we can understand which events are the one which increase the most the number of quotes on a given politician for each group of people.
 
-##### 5. Correlation analysis
- - We will try to understand the effect of 
+##### 5. Correlation and hypothesis testing analysis
+ - We will try to understand the features of the speakers (present in the speaker attribute file) which are the most correlated with a huge number of quotes on a given politician. 
 
 ## Proposed timeline
 
