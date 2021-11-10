@@ -5,7 +5,7 @@
 │   ├── speaker_attributes-analysis.ipynb: It contains an anaysis of the speaker_attributes file (missing values, correlations, ...)
 │   ├── README.md: It contains an abstract and the detailed ideas for the project.
 ├── Data_transformation_notebooks
-│   ├── Map Dates: It is the file used to map 
-│   ├── filter_quotes
-|   └── transform_special_attributes
+│   ├── Map Dates: It is the file used to create the correspondence between each quote and the dates in which the quote appeared in different articles.
+│   ├── filter_quotes: The file used to filter the quotes about a given politician from the quotes centric dataset Quotebank.
+|   └── transform_special_attributes: The file used to replace the ids in the speaker attribute file.
 ```
