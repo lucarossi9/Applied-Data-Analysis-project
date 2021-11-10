@@ -9,24 +9,31 @@ By studying the number of quotes on a given politician and on a given date, we c
 
 ## Research Questions
 
-- Is there any correlation between the number of quotes from conventional media that mention a certain person and the number of online views?
+- Who are the people whose quotes refer more to a given politician ?
 
-- Who are the people who quote more a given politician ?
+- Is there any correlation between the number of quotes from conventional media that mention a certain politician and the number of online views?
 
 - Are their characteristics such as age, political party or religion indicative of the number of quotes this person has on a certain political figure?
 
 - Which events in the life of a politician can be associated to an increase of the number of quotes referred to him ? 
 
-- 
+- Are political elections or pre-elections debates a period in which the number of quotes on a given politician is rising ?
+
+- How 2016 political elections contributed to an increase or decrease of the number of quotes referred to Trump and Clinton ?
+
+- Which is the period in which we assisted to the maximum number of quotes on a politician (Trump for example) and why ?
+
+- Which events in the life of a politician can be associated to an increase of the number of quotes referred to him over different groups (for example dividing the speakers by age, nationalities, political parties,...)
+
 ## Proposed Dataset
 
-The Quotebank dataset will be used jointly with Special attributes dataset, additionally Google trends data will be used for producing meaningful comparisons.
+The Quotebank (quotes centric version) dataset will be used jointly with Special attributes dataset, additionally Google trends data will be used for producing meaningful comparisons and Quotebank (article centric version) will be used to find the date for each quote.
 
 ## Methods
 
 * Filter quotes by person:
-  - For each politician we look for his surname in each quote in the dataset.
-  - For each politician we look at quotes made by him, and the number of requotes.
+  - For each politician we look for his surname in each quote in the dataset and we create a dataframe containing just these rows.
+  - For each politician we remove from the previously created dataframe the rows in which it is the politician himself speaking and the rows in which the name of people with the same surname of the politician appear. In this way we can remove from the previously created dataframe all the quotes pronounced by the politician himself and the rows not speaking about the politician but other people with the same surname.
   
 * Analysis of the result
   - Provide the time series of the occurrences for different politicians over different periods of time trying to analyse which are the events in the life of a politician which cause the politician to be quoted more.
