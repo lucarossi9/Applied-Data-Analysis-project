@@ -4,8 +4,8 @@
 
 ## Abstract
 
-In the 21st century media coverage is a crucial factor for political figures. By studying the number of times a certain politician is quoted in media outlets (in our case New York Times), we can have a rough measure of how much interest does the media address to this politician.
-In our analysis we will study the evolution of the number of citations of some of the most important american politicians over the last few years and we will compare their evolution to the most important events in their carreer in order to see if there is any causation or correlation. We will then add some more analysis distinguishing the speakers (who quoted a certain politician) by religion, nationality and political party in order to have a better and fragmented view of the causal effects. In the end we will compare our work with Google Trends data in order to see if the conventional media outlets caption the online interest well.
+In the 21st century media coverage is a crucial factor for political figures. By studying the number of times a quote about a given politician appears in media outlets on a given date, we can have a rough measure of how much interest the media addressed to the politician that day.
+In our analysis we will study the evolution of the number of citations on some of the most important american politicians over the last few years and we will compare their evolution to some of the most important events in their carreer in order to see if there is any causation or correlation. We will then add some more analysis distinguishing the speakers (who quoted a certain politician) by religion, nationality and political party in order to have a better and fragmented view of the causal effects. In the end, we will compare our work with Google Trends data in order to see if the conventional media outlets caption the online interest well.
 
 ## Research Questions
 
