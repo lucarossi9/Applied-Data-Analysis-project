@@ -31,16 +31,18 @@ The Quotebank (quotes centric version) dataset will be used jointly with Special
 
 ## Methods
 
-### 1. Filter quotes by person:
+##### 1. Filter quotes by person:
   * For each politician we look for his surname in each quote in the dataset and we create a dataframe containing just these rows.
   * For each politician we remove from the previously created dataframe the rows in which it is the politician himself speaking and the rows in which the name of people with the same surname of the politician appear. In this way we can remove from the previously created dataframe all the quotes pronounced by the politician himself and the rows not speaking about the politician but speaking about other people with the same surname.
   
-2. Replace the ids in the speaker attributes file to have a meaningful dataframe containing all the informations about the speakers.
+##### 2. Replace the ids in the speaker attributes file
+* We replace the ids in the speaker attributes file to have a meaningful dataframe containing all the informations about the speaker, we will use it later for the analysis part.
 
-3. For each filtered quote, extract from the quotebank (article centric dataset) the dates of all the articles containing that quote and we add them to the filtered dataset in point 1)
+##### 3. Extract the dates from the Quotebank file
+* For each filtered quote, we extract from the quotebank (article centric dataset) the dates of all the articles containing that quote and we add them to the filtered dataframe created in point 1).
 
 
-4. Analysis of the result
+##### 4. Analysis of the result
   - Provide the time series of the occurrences for different politicians over different periods of time trying to analyse which are the events in the life of a politician which cause the politician to appear more on quotes.
   - Tell the story of the american political scene from a mediatic point of view, comparing the evolution of the distribution of the main american politicians over the years 2015-2020.
   - Compare our results with Google Trends data in order to see if there is any match between the number of quotes linked to a certain politician and how much is he/she searched on google. We expect the two distribution to be similar but not the same since some scandal/events can have a different impact on different types of media (the user base of Google is quite different from the reader base of New York Times and the content shared online is inherently different from the conventional news). 
