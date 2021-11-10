@@ -65,8 +65,8 @@ The Quotebank (quotes centric version) dataset will be used jointly with Special
 
 ## Organization within the team
 
-Luca : Filtering data
-Diogo : Merge files
-Goncalo and Karol: Plotting and veryfing feasibility
+- Luca : Filtering data
+- Diogo : Merge files
+- Goncalo and Karol: Plotting and veryfing feasibility
 
 ## Questions for TAs
