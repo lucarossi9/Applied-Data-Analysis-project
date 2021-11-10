@@ -4,57 +4,69 @@
 
 ## Abstract
 
-In the 21st century media coverage is a crucial factor for political figures. By studying the number of times a certain politician is quoted in media outlets (in our case New York Times), we can have a rough measure of how much interest does the media address to this politician.
-In our analysis we will study the evolution of the number of citations of some of the most important american politicians over the last few years and we will compare their evolution to the most important events in their carreer in order to see if there is any causation or correlation. We will then add some more analysis distinguishing the speakers (who quoted a certain politician) by religion, nationality and political party in order to have a better and fragmented view of the causal effects. In the end we will compare our work with Google Trends data in order to see if the conventional media outlets caption the online interest well.
+In the 21st century, media coverage is crucial for political figures.
+By studying the number of quotes on a given politician and on a given date, we can have a rough measure of how much interest the medias addressed to the politician that day. In our analysis we will study the evolution of the number of citations on some of the most important American politicians over the last few years and we will compare it to important events in their career telling in this way the story of the American political scene from a mediatic point of view. We will then analyse the causation/correlation between such events and the number of citations also divinding the speakers (the author of quotes on a given politician) by age/sex/nationality to have a better understanding of the causal effects. Finally, we will compare our work with Google Trends to see if the conventional media outlets capture the online interest well.
 
 ## Research Questions
 
-- Is there any correlation between the number of quotes from conventional media that mention a certain person and the number of online views?
+- Who are the people whose quotes refer more to a given politician ?
 
-- Who are the people who quote more a given politician ?
+- Is there any correlation between the number of quotes from conventional media that mention a certain politician and the number of online views?
 
 - Are their characteristics such as age, political party or religion indicative of the number of quotes this person has on a certain political figure?
 
 - Which events in the life of a politician can be associated to an increase of the number of quotes referred to him ? 
 
-- 
+- Are political elections or pre-elections debates a period in which the number of quotes on a given politician is rising ?
+
+- How 2016 political elections contributed to an increase or decrease of the number of quotes referred to Trump and Clinton ?
+
+- Which is the period in which we assisted to the maximum number of quotes on a politician (Trump for example) and why ?
+
+- Which events in the life of a politician can be associated to an increase of the number of quotes referred to him over different groups (for example dividing the speakers by age, nationalities, political parties,...)
+
 ## Proposed Dataset
 
-The Quotebank dataset will be used jointly with Special attributes dataset, additionally Google trends data will be used for producing meaningful comparisons.
+The Quotebank (quotes centric version) dataset will be used jointly with Special attributes dataset, additionally Google trends data will be used for producing meaningful comparisons and Quotebank (article centric version) will be used to find the date for each quote.
 
 ## Methods
 
-* Filter quotes by person:
-  - For each politician we look for his surname in each quote in the dataset.
-  - For each politician we look at quotes made by him, and the number of requotes.
+##### 1. Filter quotes by person:
+  * For each politician we look for his surname in each quote in the dataset and we create a dataframe containing just these rows.
+  * For each politician we remove from the previously created dataframe the rows in which it is the politician himself speaking and the rows in which the name of people with the same surname of the politician appear. In this way we can remove from the previously created dataframe all the quotes pronounced by the politician himself and the rows not speaking about the politician but speaking about other people with the same surname.
   
-* Analysis of the result
-  - Provide the time series of the occurrences for different politicians over different periods of time trying to analyse which are the events in the life of a politician which cause the politician to be quoted more.
-  - Tell the story of the american political scene from a mediatic point of view, comparing the evolution of the distribution of the main american politicians over the years 2015-2020.
-  - Compare our results with Google Trends data in order to see if there is any match between the number of quotes linked to a certain politician and how much is he/she searched on google. We expect the two distribution to be similar but not the same since some scandal/events can have different a impact on different types of media (the user base of Google is quite different from the reader base of New York Times and the content shared online is inherently different from the conventional news). 
-  - Merge the QuoteBank dataset with the special attribute dataset in order to understand important information on the people who quoted a given politician. We intend to analyse how the timeseries distribution of occurences of a given politician in a quote changes within different age groups, religion groups and political parties.
+##### 2. Replace the ids in the speaker attributes file
+* We replace the ids in the speaker attributes file to have a meaningful dataframe containing all the informations about the speaker, we will use it later for the analysis part.
 
-* Sensitivity analysis
-  - Our initial hypothesis could be that people aged more than 40 tend to speak more about a certain politician with respect to people aged less than 40. We will validate or discredit this belief using sensitivity analysis.
-  - Standardize features such as age, categorize other features such as political party, religion, ethnic group. Label each author to have either mentioned a certain political figure or not.
-  - Use the aforementioned features to compute a logistic regression model to predict if the author mentioned a certain political figure or not, essentially computing the propensity scores with our observed covariates such as gender, age, nationality,religion, ...
-  - Match pairs of persons with the same propensity score in order to create meaningful treated and control groups (with the same dimension of samples) , split this pairs based on the value of the age (above or below 40).
-  - Explicitely compare the distributions of both treated and control groups, in the end compute odds ratio to validate or discredit our initial hypothesis.
+##### 3. Extract the dates from the Quotebank file
+* For each filtered quote, we extract from the quotebank (article centric dataset) the dates of all the articles containing that quote and we add them to the filtered dataframe created in point 1).
+
+##### 4. Analysis of the result
+  - Provide the time series (number of quotes related to a given politicians vs time) for different politicians and for different periods of time.
+  - We will analyse which are the events in the life of a politician which cause the politician to appear more on quotes.
+  - Tell the story of the American political scene from a mediatic point of view, comparing the evolution of the time series for the main American politicians over the years 2015-2020.
+  - Compare our results with Google Trends data in order to see if there is any match between the number of quotes linked to a certain politician and how much is he/she searched on google over different periods. We expect the two distribution to be similar but not the same since some scandal/events can have a different impact on different types of media (the user base of Google is quite different from the reader base of New York Times and the content shared online is inherently different from the conventional news). 
+  - Merge the previously created dataframe with the speaker attribute dataframe in order to understand important information on the people who quoted a given politician. We intend to analyse how the time series distribution of occurrences of a given politician changes within different age groups, religion groups and political parties. From this analysis we can understand which events are the one which increase the most the number of quotes on a given politician for each group of people.
+
+##### 5. Correlation and hypothesis testing analysis
+ - We will try to understand the features of the speakers (present in the speaker attribute file) which are the most correlated with a huge number of quotes on a given politician. 
+ - We will do chi squared hypothesis test in order to understand if a given features is independent on the number of quotes on a certain politician.
 
 ## Proposed timeline
 
 * 25th October - 31st October:
-  -
+  - Decide the idea of the project
 
 * 1st November - 7th November:
-  -
+  - Check the feasibility (checking if sentimental analysis is working)--> Some ideas were discarded
 
 * 8th November - 12th November:
-  -
-
+  - Preparing the data as described and show the feasibility of the idea
 
 ## Organization within the team
 
-to be determined
+- Luca : Filtering data
+- Diogo : Merge files
+- Goncalo and Karol: Plotting and veryfing feasibility
 
 ## Questions for TAs
