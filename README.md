@@ -5,7 +5,7 @@
 ## Abstract
 
 In the 21st century, media coverage is crucial for political figures.
-By studying the number of quotes on a given politician and on a given date, we can have a rough measure of how much interest the medias addressed to the politician that day. In our analysis we will study the evolution of the number of citations on some of the most important American politicians over the last few years and we will compare it to important events in their career telling in this way the story of the American political scene from a mediatic point of view. We will then analyse the causation/correlation between such events and the number of citations also divinding the speakers (the author of quotes on a given politician) by age/sex/nationality to have a better understanding of the causal effects. Finally, we will compare our work with Google Trends to see if the conventional media outlets capture the online interest well.
+By studying the number of quotes on a given politician and on a given date, we can have a rough measure of how much interest the media addressed to the politician that day. In our analysis we will study the evolution of the number of citations on some of the most important American politicians over the last few years and we will compare it to important events in their career in order to present the story of the American political scene from a mediatic point of view. We will then analyse the causation/correlation between such events and the number of citations also dividing the speakers (the author of quotes on a given politician) by age/sex/nationality to have a better understanding of the causal effects. Finally, we will compare our work with Google Trends to see if the conventional media outlets capture the online interest well.
 
 ## Research Questions
 
@@ -49,8 +49,8 @@ The Quotebank (quotes centric version) dataset will be used jointly with Special
   - Merge the previously created dataframe with the speaker attribute dataframe in order to understand important information on the people who quoted a given politician. We intend to analyse how the time series distribution of occurrences of a given politician changes within different age groups, religion groups and political parties. From this analysis we can understand which events are the one which increase the most the number of quotes on a given politician for each group of people.
 
 ##### 5. Correlation and hypothesis testing analysis
- - We will try to understand the features of the speakers (present in the speaker attribute file) which are the most correlated with a huge number of quotes on a given politician. 
- - We will do chi squared hypothesis test in order to understand if a given features is independent on the number of quotes on a certain politician.
+ - Try to understand the features of the speakers (present in the speaker attribute file) which are the most correlated with a huge number of quotes on a given politician. 
+ - We will do chi squared test of independence hypothesis test in order to understand if a set of given features is independent of the number of quotes of a certain politician.
 
 ## Proposed timeline
 
@@ -67,6 +67,6 @@ The Quotebank (quotes centric version) dataset will be used jointly with Special
 
 - Luca : Filtering data
 - Diogo : Merge files
-- Goncalo and Karol: Plotting and veryfing feasibility
+- Goncalo : Plotting and veryfing feasibility
 
 ## Questions for TAs
