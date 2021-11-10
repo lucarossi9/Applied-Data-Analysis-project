@@ -61,7 +61,7 @@ The Quotebank (quotes centric version) dataset will be used jointly with Special
   - Check the feasibility (checking if sentimental analysis is working)--> Some ideas were discarded
 
 * 8th November - 12th November:
- - Preparing the data as described and show the feasibility of the idea
+  - Preparing the data as described and show the feasibility of the idea
 
 ## Organization within the team
 
