@@ -69,4 +69,4 @@ The Quotebank (quotes centric version) dataset will be used jointly with Special
 - Diogo : Merge files
 - Goncalo : Plotting and veryfing feasibility
 
-# See Code Organization.md to understand how we have organized the notebooks file
+# See Code Organization.md to understand how we have organized the notebooks
