@@ -90,4 +90,4 @@ The Quotebank (quotes centric version) dataset will be used jointly with Special
 - Diogo : review the code, wrote machine learning model part and speaker attributes analysis part of the datastory
 - Goncalo : improving some plots, wrote the part of the nationality, ethnicity of the datastory
 
-# See Code Organization.md to understand how we have organized the notebooks
+### See Code Organization.md to understand how we have organized the notebooks
