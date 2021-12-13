@@ -48,7 +48,7 @@ The Quotebank (quotes centric version) dataset will be used jointly with Special
 * Provide the time series (number of quotes related to a given politicians vs time) for Trump and Clinton and for the years 2015-2017.
 * We analyse which are the events in the life of a politician which cause the politician to have more quotes referred to him/her.
 * Tell the story of the American political scene from a mediatic point of view for the years 2015-2017.
-* Compare our results with Google Trends data in order to see if there is any match between the number of quotes linked to a certain politician and how much is he/she searched on google over different periods ---> some match were found but also some mismatch, we explained why.
+* Compare our results with Google Trends data in order to see if there is any match between the number of quotes linked to a certain politician and how much is he/she searched on google over different periods ---> some matches were found but also some mismatches, we explained why.
 
 ##### 6. Speaker attributes analysis
 * Use t-test to find statistically significant difference in mean of the age of the Trump's speakers and Clinton speaker's ---> Clinton speakers are older.
