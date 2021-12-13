@@ -5,25 +5,21 @@
 ## Abstract
 
 In the 21st century, media coverage is crucial for political figures.
-By studying the number of quotes on a given politician and on a given date, we can have a rough measure of how much interest the media addressed to the politician that day. In our analysis we will study the evolution of the number of citations on some of the most important American politicians over the last few years and we will compare it to important events in their career in order to present the story of the American political scene from a mediatic point of view. We will then analyse the causation/correlation between such events and the number of citations also dividing the speakers (the author of quotes on a given politician) by age/sex/nationality to have a better understanding of the causal effects. Finally, we will compare our work with Google Trends to see if the conventional media outlets capture the online interest well.
+By studying the number of quotes on a given politician and on a given date, we can have a rough measure of how much interest the media addressed to the politician that day. We studied the evolution of the number of citations of two of the most important American politicians (Donald Trump and Hillary Clinton) over the last few years and we compared it to important events in their career in order to present the story of the American political scene of the years 2015-2017 from a mediatic point of view. Moreover, we compared our work with Google Trends to see if the conventional media outlets capture the online interest well. Finally, by means of t-tests, confidence intervals and an interpretable machine learning model (linear/logistic regression) we tried to understand which of the attributes of the speakers are the most relevant for them to have quotes referred to Trump or to Clinton.
 
 ## Research Questions
 
-- Who are the people whose quotes refer more to a given politician ?
-
-- Is there any correlation between the number of quotes from conventional media that mention a certain politician and the number of online views?
-
-- Are their characteristics such as age, political party or religion indicative of the number of quotes this person has on a certain political figure?
+- Who between Trump and Clinton has more quotes in different periods from 2015 to 2017 and why ?
 
 - Which events in the life of a politician can be associated to an increase of the number of quotes referred to him ? 
 
 - Are political elections or pre-elections debates a period in which the number of quotes on a given politician is rising ?
 
-- How 2016 political elections contributed to an increase or decrease of the number of quotes referred to Trump and Clinton ?
+- Is there any statistically significant difference between the age and the ratios men/women of Trump/Clinton speakers ?
 
-- Which is the period in which we assisted to the maximum number of quotes on a politician (Trump for example) and why ?
+- Are the ethnicity and nationalities of the speakers different from Clinton and Trump speakers ? If yes can we understand why ?
 
-- Which events in the life of a politician can be associated to an increase of the number of quotes referred to him over different groups (for example dividing the speakers by age, nationalities, political parties,...)
+- Which of the speaker attributes are the most relevant to make the speaker having quotes referred to Trump or to Clinton ?
 
 ## Proposed Dataset
 
@@ -31,28 +27,38 @@ The Quotebank (quotes centric version) dataset will be used jointly with Special
 
 ## Methods
 
+### Data preparation 
+
 ##### 1. Filter quotes by person:
-  * For each politician we look for his surname in each quote in the dataset and we create a dataframe containing just these rows.
-  * For each politician we remove from the previously created dataframe the rows in which it is the politician himself speaking and the rows in which the name of people with the same surname of the politician appear. In this way we can remove from the previously created dataframe all the quotes pronounced by the politician himself and the rows not speaking about the politician but speaking about other people with the same surname.
+ * For each politician we look for his surname in each quote in the dataset and we create a dataframe containing just these rows.
+ * For each politician we remove from the previously created dataframe the rows in which it is the politician himself speaking and the rows in which the name of people with the same surname of the politician appears. In this way we can remove from the previously created dataframe all the quotes pronounced by the politician himself and the rows not speaking about the politician but speaking about other people with the same surname.
   
 ##### 2. Replace the ids in the speaker attributes file
-* We replace the ids in the speaker attributes file to have a meaningful dataframe containing all the informations about the speaker, we will use it later for the analysis part.
+* We merge the quotes with the speaker attribute file so that we also have all the relevant information about the speakers.
 
 ##### 3. Extract the dates from the Quotebank file
 * For each filtered quote, we extract from the quotebank (article centric dataset) the dates of all the articles containing that quote and we add them to the filtered dataframe created in point 1).
 
-##### 4. Analysis of the result
-  - Provide the time series (number of quotes related to a given politicians vs time) for different politicians and for different periods of time.
-  - We will analyse which are the events in the life of a politician which cause the politician to appear more on quotes.
-  - Tell the story of the American political scene from a mediatic point of view, comparing the evolution of the time series for the main American politicians over the years 2015-2020.
-  - Compare our results with Google Trends data in order to see if there is any match between the number of quotes linked to a certain politician and how much is he/she searched on google over different periods. We expect the two distribution to be similar but not the same since some scandal/events can have a different impact on different types of media (the user base of Google is quite different from the reader base of New York Times and the content shared online is inherently different from the conventional news). 
-  - Merge the previously created dataframe with the speaker attribute dataframe in order to understand important information on the people who quoted a given politician. We intend to analyse how the time series distribution of occurrences of a given politician changes within different age groups, religion groups and political parties. From this analysis we can understand which events are the one which increase the most the number of quotes on a given politician for each group of people.
+##### 4. Google Trends
+* We download the data from Google Trends related to the queries referred to Trump or Clinton in the years 2015-2017.
 
-##### 5. Correlation and hypothesis testing analysis
- - Try to understand the features of the speakers (present in the speaker attribute file) which are the most correlated with a huge number of quotes on a given politician. 
- - We will do chi squared test of independence hypothesis test in order to understand if a set of given features is independent of the number of quotes of a certain politician.
+### Results
+
+##### 5. Timeseries
+* Provide the time series (number of quotes related to a given politicians vs time) for Trump and Clinton and for the years 2015-2017.
+* We analyse which are the events in the life of a politician which cause the politician to have more quotes referred to him/her.
+* Tell the story of the American political scene from a mediatic point of view for the years 2015-2017.
+* Compare our results with Google Trends data in order to see if there is any match between the number of quotes linked to a certain politician and how much is he/she searched on google over different periods ---> some match were found but also some mismatch, we explained why.
+
+##### 6. Speaker attributes analysis
+* Use t-test to find statistically significant difference in mean of the age of the Trump's speakers and Clinton speaker's ---> Clinton speakers are older.
+* Use confidence intervals to understand if there is a statistically significant ratio #men/#women between the Trump's and Clinton's speakers. ---> The ratio is bigger for Trump's speakers.
+* Look at the difference in the distribution of the nationality, we noticed some differences and some similarity, we explained why this happens.
+* We build a machine learning model to explain which of the attributes of the speakers are the most relevant for them to have quotes referred to Trump or to Clinton.
 
 ## Proposed timeline
+
+##### Milestone 2
 
 * 25th October - 31st October:
   - Decide the idea of the project
@@ -62,11 +68,26 @@ The Quotebank (quotes centric version) dataset will be used jointly with Special
 
 * 8th November - 12th November:
   - Preparing the data as described and show the feasibility of the idea
+  - 
+##### Milestone 3
+ * First week: Started writing the code (mainly time series part)
+ 
+ * Second week: Finish the codes (differences between speaker attributes of the two groups and machine learning model)
+ 
+ * Third week: Data Story
 
 ## Organization within the team
+
+##### Milestone 2
 
 - Luca : Filtering data
 - Diogo : Merge files
 - Goncalo : Plotting and veryfing feasibility
+
+##### Milestone 3
+
+- Luca : wrote codes for timeseries, machine learining model and speaker attributes analysis, wrote timeseries part of the datastory
+- Diogo : review the code, wrote machine learning model part and speaker attributes analysis part of the datastory
+- Goncalo : improving some plots, wrote the part of the nationality, ethnicity of the datastory
 
 # See Code Organization.md to understand how we have organized the notebooks
