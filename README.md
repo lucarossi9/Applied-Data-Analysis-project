@@ -20,7 +20,7 @@ To have a look at the repository of the story: https://github.com/diogosoares22/
 
 - Is there any statistically significant difference between the age and the ratios men/women of Trump/Clinton speakers ?
 
-- Are the ethnicity and nationalities of the speakers different from Clinton and Trump speakers ? If yes can we understand why ?
+- Are nationalities of the speakers different from Clinton and Trump speakers ? If yes can we understand why ?
 
 - Which of the speaker attributes are the most relevant to make the speaker having quotes referred to Trump or to Clinton ?
 
