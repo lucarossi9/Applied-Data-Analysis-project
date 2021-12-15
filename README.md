@@ -7,6 +7,8 @@
 In the 21st century, media coverage is crucial for political figures.
 By studying the number of quotes on a given politician and on a given date, we can have a rough measure of how much interest the media addressed to the politician that day. We studied the evolution of the number of citations of two of the most important American politicians (Donald Trump and Hillary Clinton) over the last few years and we compared it to important events in their career in order to present the story of the American political scene of the years 2015-2017 from a mediatic point of view. Moreover, we compared our work with Google Trends to see if the conventional media outlets capture the online interest well. Finally, by means of t-tests, confidence intervals and an interpretable machine learning model (linear/logistic regression) we tried to understand which of the attributes of the speakers are the most relevant for them to have quotes referred to Trump or to Clinton.
 
+To have a look at the datasory : https://diogosoares22.github.io/ada-fix-it/
+To have a look at the repository of the story: 
 ## Research Questions
 
 - Who between Trump and Clinton has more quotes in different periods from 2015 to 2017 and why ?
