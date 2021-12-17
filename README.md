@@ -71,7 +71,7 @@ The Quotebank (quotes centric version) dataset will be used jointly with Special
 
 * 8th November - 12th November:
   - Preparing the data as described and show the feasibility of the idea
-  - 
+
 ##### Milestone 3
  * First week: Started writing the code (mainly time series part)
  
@@ -89,8 +89,8 @@ The Quotebank (quotes centric version) dataset will be used jointly with Special
 
 ##### Milestone 3
 
-- Luca : wrote codes for timeseries, machine learining model and speaker attributes analysis, wrote timeseries part of the datastory
-- Diogo : review the code, wrote machine learning model part and speaker attributes analysis part of the datastory
-- Goncalo : improving some plots, wrote the part of the nationality, ethnicity of the datastory
+- Luca : Wrote all the codes for milestone 3, wrote timeseries part of the datastory, wrote google trend comparison part of datastory, wrote machine learning part of the datastory (mainly the tree part), fixing code quality, reviewing the datastory
+- Diogo : Review the code, wrote machine learning model part and age analysis analysis part of the datastory
+- Goncalo : Wrote the part of the nationality of the datastory
 
 ### See Code Organization.md to understand how we have organized the notebooks
