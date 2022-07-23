@@ -17,4 +17,4 @@ By studying the number of quotes referred to a given politician on a given date,
 * **Google trends** timeseries data: used to retrieve the number of searches on different periods of the two main politicians.
 
 
-### See Code Organization.md to understand how we have organized the notebooks
+**See Code Organization.md to understand how we have organized the notebooks**
