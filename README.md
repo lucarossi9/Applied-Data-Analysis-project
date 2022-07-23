@@ -1,11 +1,11 @@
-# ADA-2021-project-fix-it
+# Applied Data Analysis 2021-project
 
-## Title : An analysis of the american political scene from a mediatic point of view 
+# An analysis of the american political scene from a mediatic point of view 
 
 ## Abstract
 
 In the 21st century, media coverage is crucial for political figures.
-By studying the number of quotes on a given politician and on a given date, we can have a rough measure of how much interest the media addressed to the politician that day. We studied the evolution of the number of citations of two of the most important American politicians (Donald Trump and Hillary Clinton) over the last few years and we compared it to important events in their career in order to present the story of the American political scene of the years 2015-2017 from a mediatic point of view. Moreover, we compared our work with Google Trends to see if the conventional media outlets capture the online interest well. Finally, by means of t-tests, confidence intervals and an interpretable machine learning model (linear/logistic regression) we tried to understand which of the attributes of the speakers are the most relevant for them to have quotes referred to Trump or to Clinton.
+By studying the number of quotes referred to a given politician on a given date, we can have a rough measure of how much interest the media addressed to the politician that day. Using Quotebank Dataset, we studied the evolution of the number of citations of two of the most famous American politicians (Donald Trump and Hillary Clinton) over the last few years, and we compared it to key events in their careers to present the story of the American political scene of the years 2015-2017 from a mediatic point of view. Moreover, we compared our work with Google Trends to see if the conventional media outlets capture online interest well. Finally, using t-tests, confidence intervals, and an interpretable machine learning model (linear/logistic regression), we understood which features of the authors of the quotes could predict whether the latter will speak about Clinton or Trump.
 
 To have a look at the datasory : https://diogosoares22.github.io/ada-fix-it/
 
