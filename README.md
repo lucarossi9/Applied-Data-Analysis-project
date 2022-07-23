@@ -10,8 +10,6 @@ By studying the number of quotes referred to a given politician on a given date,
 **The complete datasory is available at the following** [website](https://diogosoares22.github.io/ada-fix-it/)
 
 
-To have a look at the repository of the story: https://github.com/diogosoares22/ada-fix-it
-
 ## Dataset used
 
 * The **Quotebank** (quotes centric version) dataset: Quotebank is a dataset of 235 million unique, speaker-attributed quotations that were extracted from 196 million English news articles (127 million containing quotations) crawled from over 377 thousand web domains (15 thousand root domains) between September 2008 and April 2020. The quotations were extracted and attributed using Quobert, a distantly and minimally supervised end-to-end, language-agnostic framework for quotation attribution.
