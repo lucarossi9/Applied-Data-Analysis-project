@@ -7,26 +7,15 @@
 In the 21st century, media coverage is crucial for political figures.
 By studying the number of quotes referred to a given politician on a given date, we can have a rough measure of how much interest the media addressed to the politician that day. Using Quotebank Dataset, we studied the evolution of the number of citations of two of the most famous American politicians (Donald Trump and Hillary Clinton) over the last few years, and we compared it to key events in their careers to present the story of the American political scene of the years 2015-2017 from a mediatic point of view. Moreover, we compared our work with Google Trends to see if the conventional media outlets capture online interest well. Finally, using t-tests, confidence intervals, and an interpretable machine learning model (linear/logistic regression), we understood which features of the authors of the quotes could predict whether the latter will speak about Clinton or Trump.
 
-To have a look at the datasory : https://diogosoares22.github.io/ada-fix-it/
+**The complete datasory is available at** https://diogosoares22.github.io/ada-fix-it/
 
 To have a look at the repository of the story: https://github.com/diogosoares22/ada-fix-it
-## Research Questions
 
-- Who between Trump and Clinton has more quotes in different periods from 2015 to 2017 and why ?
+## Dataset used
 
-- Which events in the life of a politician can be associated to an increase of the number of quotes referred to him ? 
+* The **Quotebank** (quotes centric version) dataset: Quotebank is a dataset of 235 million unique, speaker-attributed quotations that were extracted from 196 million English news articles (127 million containing quotations) crawled from over 377 thousand web domains (15 thousand root domains) between September 2008 and April 2020. The quotations were extracted and attributed using Quobert, a distantly and minimally supervised end-to-end, language-agnostic framework for quotation attribution.
 
-- Are political elections or pre-elections debates a period in which the number of quotes on a given politician is rising ?
-
-- Is there any statistically significant difference between the age and the ratios men/women of Trump/Clinton speakers ?
-
-- Are nationalities of the speakers different from Clinton and Trump speakers ? If yes can we understand why ?
-
-- Which of the speaker attributes are the most relevant to make the speaker having quotes referred to Trump or to Clinton ?
-
-## Proposed Dataset
-
-The Quotebank (quotes centric version) dataset will be used jointly with Special attributes dataset, additionally Google trends data will be used for producing meaningful comparisons and Quotebank (article centric version) will be used to find the date for each quote.
+* **Google trends** timeseries data: used to retrieve the number of searches on different periods of the two main politicians.
 
 ## Methods
 
@@ -58,39 +47,5 @@ The Quotebank (quotes centric version) dataset will be used jointly with Special
 * Use confidence intervals to understand if there is a statistically significant ratio #men/#women between the Trump's and Clinton's speakers. ---> The ratio is bigger for Trump's speakers.
 * Look at the difference in the distribution of the nationality, we noticed some differences and some similarity, we explained why this happens.
 * We build a machine learning model to explain which of the attributes of the speakers are the most relevant for them to have quotes referred to Trump or to Clinton.
-
-## Proposed timeline
-
-##### Milestone 2
-
-* 25th October - 31st October:
-  - Decide the idea of the project
-
-* 1st November - 7th November:
-  - Check the feasibility (checking if sentimental analysis is working)--> Some ideas were discarded
-
-* 8th November - 12th November:
-  - Preparing the data as described and show the feasibility of the idea
-
-##### Milestone 3
- * First week: Started writing the code (mainly time series part)
- 
- * Second week: Finish the codes (differences between speaker attributes of the two groups and machine learning model)
- 
- * Third week: Data Story
-
-## Organization within the team
-
-##### Milestone 2
-
-- Luca : Filtering data
-- Diogo : Merge files
-- Goncalo : Plotting and veryfing feasibility
-
-##### Milestone 3
-
-- Luca : Wrote all the codes for milestone 3, wrote timeseries part of the datastory, wrote google trend comparison part of datastory, wrote machine learning part of the datastory (mainly the tree part), fixing code quality, reviewing the datastory
-- Diogo : Review the code, wrote machine learning model part and age analysis part of the datastory
-- Goncalo : Wrote the part of the nationality of the datastory
 
 ### See Code Organization.md to understand how we have organized the notebooks
